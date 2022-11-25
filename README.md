@@ -12,7 +12,7 @@ If your database work, you can call some REST endpoints defined in localhost on 
 * Clone this repository
 * Change the dir to the root of the project
 * Edit [application.properties](src/main/resources/application.properties) - set database info (db url, db driver, username, password, dialect)
-* If you use a DBMS other than postgreSQL edit [build.gradle](./build.gradle) (need to add jdbc-driver to the dependencies block)
+* If you use a DBMS other than postgreSQL edit [build.gradle](./build.gradle) (need to add appropriate jdbc-driver to the dependencies block)
 
 ### Build :
 
@@ -34,7 +34,7 @@ Content-Type: application/json
     "password": "password"
 }
 
-### User authentification
+### User authentication
 
 POST /api/register
 
@@ -72,7 +72,7 @@ How it looks in Postman :
 ![image](https://user-images.githubusercontent.com/105499106/203879038-a0e00ab6-a15d-4947-afbd-6f9e1ee1e5df.png)
 ![image](https://user-images.githubusercontent.com/105499106/203879081-0e332e8e-3bce-48fe-90f8-af60294ce91d.png)
 
-<b>All other queries look similar</b>
+#### All other queries look similar
 ### Get all recipes sorted by update time
 
 GET /api/recipes/
